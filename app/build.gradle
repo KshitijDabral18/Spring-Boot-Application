@@ -23,13 +23,14 @@ repositories {
 dependencies {
     // Use JUnit test framework.
     testImplementation libs.junit
+    //testImplementation libs.spock.core
 
     // This dependency is used by the application.
     implementation libs.guava
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    //testRumtimeOnly 'org.springframework.boot:spring-boot-devtools'
+    testRuntimeOnly 'org.springframework.boot:spring-boot-devtools'
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
