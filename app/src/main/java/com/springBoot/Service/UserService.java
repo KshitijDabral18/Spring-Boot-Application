@@ -13,5 +13,8 @@ public class UserService {
     public String getUserName() {
         return usersConfig.getName();
     }
+    public String getUserClassName() {
+        return usersConfig.getClassName();
+    }
 
 }

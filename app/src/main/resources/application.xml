@@ -3,7 +3,7 @@
       xsi:schemaLocation="http://www.springframework.org/schema/beans
                           http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="UserConfigBean" class="com.springBoot.UserConfig.UsersConfig">
+    <bean id="userConfigBean" class="com.springBoot.UserConfig.UsersConfig">
         <property name="name" value="john doe"/>
         <property name="className" value="ExampleClass"/>
     </bean>
