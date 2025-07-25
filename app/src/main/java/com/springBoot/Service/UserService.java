@@ -1,7 +1,7 @@
 package com.springBoot.Service;
 
 
-import com.springBoot.UserConfig.UsersConfig;
+import com.springBoot.Bean.UsersConfig;
 
 public class UserService {
     UsersConfig usersConfig;
@@ -10,11 +10,6 @@ public class UserService {
         this.usersConfig = usersConfig;
     }
 
-    public String getUserName() {
-        return usersConfig.getName();
-    }
-    public String getUserClassName() {
-        return usersConfig.getClassName();
-    }
+    
 
 }
