@@ -7,4 +7,12 @@
         <property name="name" value="john doe"/>
         <property name="className" value="ExampleClass"/>
     </bean>
+
+    <bean id="userService" class = "com.springBoot.Service.UserService">
+        <constructor-arg ref="userConfigBean"/>
+    </bean>
+    <bean id="orderService" class ="com.springBoot.Service.OrderService" factory-method="getInstance">
+        <constructor-arg ref="userConfigBean"/>
+        <constructor-arg ref="userService"/>
+    </bean>
 </beans>

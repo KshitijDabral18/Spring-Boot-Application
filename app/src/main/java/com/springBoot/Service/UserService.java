@@ -4,10 +4,10 @@ package com.springBoot.Service;
 import com.springBoot.Bean.UsersConfig;
 
 public class UserService {
-    UsersConfig usersConfig;
+    UsersConfig userConfig;
 
-    public UserService(UsersConfig usersConfig) {
-        this.usersConfig = usersConfig;
+    public UserService(UsersConfig userConfig) {
+        this.userConfig = userConfig;
     }
 
     

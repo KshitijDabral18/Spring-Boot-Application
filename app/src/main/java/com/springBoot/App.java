@@ -3,17 +3,19 @@
  */
 package com.springBoot;
 
+import com.springBoot.Bean.UsersConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 @SpringBootApplication
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+
 
     public static void main(String[] args) {
-
         SpringApplication.run(App.class, args);
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UsersConfig userConfig = (UsersConfig) context.getBean("userConfigBean");
     }
 }
